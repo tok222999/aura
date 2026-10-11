@@ -1,0 +1,64 @@
+{
+  "schemaVersion": "aura-verified-proof-v1",
+  "source": "operator-verified-testnet-run",
+  "verifiedAt": 1790628773975,
+  "observedAt": 1790628773975,
+  "privateBalanceUsd": 0.85,
+  "balanceMark": {
+    "sourceAmountUsd": 1.0,
+    "backingZec": 0.000684,
+    "entryRateUsdPerZec": 1461.99,
+    "verificationRateUsdPerZec": 1242.69,
+    "networkFeeUsd": 0.0,
+    "markDifferenceUsd": 0.15,
+    "reason": "Signed activity read before the $0.02 Pay leg reported approximately $0.85 of ZEC-backed value from the new $1.00 Base entry; live testnet rate, precision, and reserve can make the marked value differ from the source amount. This is not an Aura fee."
+  },
+  "balanceCheckpoint": {
+    "beforeUsd": 0,
+    "afterUsd": 0.85,
+    "deltaUsd": 0.85,
+    "capturedAt": 1790628658104
+  },
+  "recipient": "HTSBQs5YNHnJbp4QbjbTdYuvawr776Zuvfpp6GzMcyKN",
+  "proof": {
+    "base": {
+      "hash": "0xb666370fbb6be2a05307c3ab3d3f2aa68bca873b6d8c3b3a40a073347348c8d7",
+      "network": "Base Sepolia",
+      "status": "confirmed",
+      "confirmationStatus": "finalized",
+      "blockHeight": 47429371,
+      "blockHash": "0x15a77f2e487f2dceb33dab2a680beabd2dd19fa1ecb1bd871a73f2509441d2f9",
+      "confirmations": 860,
+      "timestamp": 1790627030000,
+      "observedAt": 1790628773975
+    },
+    "shielding": {
+      "hash": "605e02aed9a7ad6519fb03779ac72f8e448e0376f67faa6b9eaa6a3be389c4b4",
+      "network": "Zcash Testnet",
+      "status": "confirmed",
+      "timestamp": 1790628474549,
+      "observedAt": 1790628773975,
+      "blockHeight": 4410610,
+      "confirmations": 21,
+      "confirmationSource": "operator-wallet-mined-record"
+    },
+    "spend": {
+      "hash": "1e798e459f7665e21c4bdd29a1b68953581b2b8cce92d7ae4841184e5389d385",
+      "network": "Zcash Testnet",
+      "status": "confirmed",
+      "timestamp": 1790628658104,
+      "observedAt": 1790628773975,
+      "blockHeight": 4410626,
+      "confirmations": 5,
+      "confirmationSource": "operator-wallet-mined-record"
+    },
+    "solana": {
+      "hash": "4UUUUxSmrXma3aMhLYav17Jq9KacerwVo74M8t9aS241sieGCapRUWemLeoakwtJ3REAmxkn9V3vCo8FzwRMceAB",
+      "network": "Solana Devnet",
+      "status": "finalized",
+      "timestamp": 1790628660104,
+      "observedAt": 1790628773975,
+      "slot": 505285947
+    }
+  }
+}

@@ -1,0 +1,35 @@
+# Local configuration and secrets
+.env
+.env.*
+!.env.example
+
+# Runtime state, ledgers, sessions, keys, and generated wallet data
+.aura-data/
+.aura-production/
+zcash-wallet-data/
+*.sqlite
+*.sqlite-*
+*.db
+*.key
+*.pem
+*.secret
+
+# Build and dependency output
+node_modules/
+.next/
+out/
+zcash-devtool/target/
+
+# Local archives, logs, and temporary staging
+*.zip
+*.log
+_aura_submission_staging/
+_aura_gpt_staging/
+tmp/
+temp/
+
+# OS/editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

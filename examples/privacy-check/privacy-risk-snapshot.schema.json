@@ -1,0 +1,16 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://aura.example/schema/privacy-risk-snapshot-v1.json",
+  "title": "AURA PrivacyRiskSnapshot",
+  "type": "object",
+  "required": ["amountUsd", "policy", "riskCodes", "readyToSpendUsd", "summary", "hash"],
+  "properties": {
+    "amountUsd": { "type": "number", "minimum": 0 },
+    "policy": { "enum": ["fast", "private", "strong", "custom"] },
+    "riskCodes": { "type": "array", "items": { "type": "string" } },
+    "readyToSpendUsd": { "type": "number", "minimum": 0 },
+    "summary": { "type": "string" },
+    "hash": { "type": "string", "minLength": 1 }
+  },
+  "additionalProperties": true
+}

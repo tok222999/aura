@@ -1,0 +1,6 @@
+[build]
+rustflags = ["--cfg", "zcash_unstable=\"nu7\""]
+
+[target.x86_64-pc-windows-gnu]
+linker = "clang"
+rustflags = ["-C", "link-arg=-fuse-ld=lld", "-C", "link-arg=--rtlib=compiler-rt", "-C", "link-arg=--unwindlib=libunwind", "--cfg", "zcash_unstable=\"nu7\""]
